@@ -6,6 +6,8 @@ Budget-safe rule: these commands do not download videos, do not run optical flow
 
 ## Initialize a project
 
+Run from the repository root so `src` is importable by `python -m`.
+
 ```powershell
 python -m src.hemli_video_analyzer.project_init C:\Hemli_Vortex_Research
 ```
@@ -27,6 +29,8 @@ This creates:
 It also creates empty registry CSV files under `04_combined_database/`.
 
 ## Create an experiment
+
+Run from the repository root so `src` is importable by `python -m`.
 
 ```powershell
 python -m src.hemli_video_analyzer.create_experiment C:\Hemli_Vortex_Research EXP_KH_0001

@@ -23,6 +23,7 @@ PROJECT_FOLDERS = [
 ]
 
 REGISTRY_SCHEMAS = {
+    "experiments_registry.csv": [
         "local_video_file",
         "date_accessed",
         "rights_status",
