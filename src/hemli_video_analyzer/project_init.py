@@ -23,6 +23,9 @@ PROJECT_FOLDERS = [
 ]
 
 REGISTRY_SCHEMAS = {
+    "experiment_registry.csv": [
+        "experiment_id",
+        "source_url",
         "local_video_file",
         "date_accessed",
         "rights_status",
@@ -32,7 +35,7 @@ REGISTRY_SCHEMAS = {
         "scale_known",
         "pixel_size_m",
         "nu_m2_s",
-        "quality_score",
+        "quality_score_0_100",
         "acceptance_level",
         "HE",
         "HO",

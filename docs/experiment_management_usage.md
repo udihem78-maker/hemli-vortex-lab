@@ -53,3 +53,16 @@ Generated metadata and forms are placed under `00_metadata/`.
 ## Data policy
 
 Do not store raw videos or large `flow_field_xyuv.csv` files in lightweight research handoff archives. Keep them in local raw-data storage only.
+
+## Calibrated vs uncalibrated reporting levels
+
+- **L0 Demonstration**: no usable spatial and timing calibration, only qualitative interpretation.
+- **L1 Comparative**: partial calibration, HP trends can be compared across similarly processed runs.
+- **L2 Semi-Quantitative**: calibrated scale and timing with geometry context; allows conservative physical reporting.
+- **L3 Research-grade**: complete spatial, timing, fluid-property, and geometry calibration; supports research-grade claims.
+
+Report snippet text for future HTML integration:
+
+- `Spatial scale missing: velocities and length scales are pixel-based.`
+- `Timing calibration missing or inherited from video metadata.`
+- `Reynolds number is not reported because fluid viscosity is missing.`

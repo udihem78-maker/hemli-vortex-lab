@@ -47,7 +47,14 @@ DEFAULT_METADATA = {
     "buoyancy_N_1_s": None,
     "sound_speed_m_s": None,
     "quality_score": None,
+    "quality_score_0_100": None,
     "acceptance_level": "L0/L1/L2/L3",
+    "allowed_claims": {
+        "can_compare_hp": False,
+        "can_report_physical_velocity": False,
+        "can_report_reynolds": False,
+        "can_make_research_grade_claim": False,
+    },
     "analysis_status": "METADATA_STARTED",
     "notes": "",
 }

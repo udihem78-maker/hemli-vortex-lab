@@ -9,6 +9,13 @@
   "pixel_size_m": null,
   "nu_m2_s": null,
   "quality_score": null,
+  "quality_score_0_100": null,
   "acceptance_level": "L0/L1/L2/L3",
+  "allowed_claims": {
+    "can_compare_hp": false,
+    "can_report_physical_velocity": false,
+    "can_report_reynolds": false,
+    "can_make_research_grade_claim": false
+  },
   "notes": ""
 }
