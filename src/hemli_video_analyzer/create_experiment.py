@@ -100,12 +100,14 @@ def copy_or_create_template(
 
 def create_experiment(project_root: Path, experiment_id: str, force: bool = False) -> Path:
     project_root = project_root.expanduser().resolve()
+    if any(sep in experiment_id for sep in ("/", "\\", ":")) or experiment_id.strip() in {"", ".", ".."}:
+        raise ValueError(
+            "experiment_id must be a simple name (no path separators, drive letters, or '.'/'..')."
+        )
+
     experiment_root = project_root / "02_experiments" / experiment_id
-
-    if experiment_root.exists() and not force:
-        # Do not overwrite existing experiment data. Create missing subfolders/templates only.
-        pass
-
+    if experiment_root.exists() and not experiment_root.is_dir():
+        raise NotADirectoryError(f"Experiment path exists but is not a directory: {experiment_root}")
     for folder in EXPERIMENT_FOLDERS:
         (experiment_root / folder).mkdir(parents=True, exist_ok=True)
 
