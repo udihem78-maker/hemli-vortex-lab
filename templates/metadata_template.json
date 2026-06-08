@@ -1,0 +1,14 @@
+﻿{
+  "experiment_id": "",
+  "source_url": "",
+  "local_video_file": "",
+  "title": "",
+  "phenomenon": "",
+  "medium": "",
+  "fps": null,
+  "pixel_size_m": null,
+  "nu_m2_s": null,
+  "quality_score": null,
+  "acceptance_level": "L0/L1/L2/L3",
+  "notes": ""
+}
