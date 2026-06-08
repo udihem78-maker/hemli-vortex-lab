@@ -23,14 +23,7 @@ PROJECT_FOLDERS = [
 ]
 
 REGISTRY_SCHEMAS = {
-    "experiments_registry.csv": [
-        "experiment_id",
-        "title",
-        "phenomenon",
-        "source_type",
-        "source_url",
-        "local_video_path",
-        "institution_or_channel",
+        "local_video_file",
         "date_accessed",
         "rights_status",
         "medium",
