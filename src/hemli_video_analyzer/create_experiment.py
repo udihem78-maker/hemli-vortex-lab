@@ -46,7 +46,6 @@ DEFAULT_METADATA = {
     "rotation_f_1_s": None,
     "buoyancy_N_1_s": None,
     "sound_speed_m_s": None,
-    "quality_score": None,
     "quality_score_0_100": None,
     "acceptance_level": "L0/L1/L2/L3",
     "allowed_claims": {
