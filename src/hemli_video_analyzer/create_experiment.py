@@ -75,7 +75,13 @@ def repo_root_from_module() -> Path:
 def create_metadata(path: Path, experiment_id: str, force: bool = False) -> None:
     if path.exists() and not force:
         return
-    payload = dict(DEFAULT_METADATA)
+
+    template_path = repo_root_from_module() / "templates" / "metadata_template.json"
+    if template_path.exists():
+        payload = json.loads(template_path.read_text(encoding="utf-8-sig"))
+    else:
+        payload = dict(DEFAULT_METADATA)
+
     payload["experiment_id"] = experiment_id
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
