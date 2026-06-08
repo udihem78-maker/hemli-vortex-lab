@@ -6,6 +6,8 @@ Budget-safe rule: these commands do not download videos, do not run optical flow
 
 ## Initialize a project
 
+Run these commands from the repository root so `src/` is importable.
+
 ```powershell
 python -m src.hemli_video_analyzer.project_init C:\Hemli_Vortex_Research
 ```
