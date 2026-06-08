@@ -53,3 +53,10 @@ Generated metadata and forms are placed under `00_metadata/`.
 ## Data policy
 
 Do not store raw videos or large `flow_field_xyuv.csv` files in lightweight research handoff archives. Keep them in local raw-data storage only.
+
+## Calibration reporting levels
+
+- **L0 Demonstration**: metadata-only baseline; physical claims are not allowed.
+- **L1 Comparative**: relative comparisons are allowed, but incomplete calibration blocks physical claims.
+- **L2 Semi-Quantitative**: partial calibration allows limited quantitative interpretation.
+- **L3 Research-grade**: complete calibration supports full research-grade claims.
