@@ -1,6 +1,6 @@
 # Experiment Management CLI Usage
 
-These commands create and validate the standardized folder structure for Hemli Vortex Lab research projects.
+These commands create and verify the standardized folder structure for Hemli Vortex Lab research projects.
 
 Budget-safe rule: these commands do not download videos, do not run optical flow, do not run batch video analysis, and do not install packages.
 
